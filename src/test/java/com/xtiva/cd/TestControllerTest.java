@@ -23,7 +23,7 @@ public class TestControllerTest {
   @Test
   public void testHealthyEndpoint() throws Exception {
     MvcResult result = mvc.perform(get("/api/test")).andReturn();
-    Assert.assertEquals("Hello Live", result.getResponse().getContentAsString());
+    Assert.assertEquals("Hello World", result.getResponse().getContentAsString());
   }
 
 }
